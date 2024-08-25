@@ -1,0 +1,30 @@
+$clr-background: #eceff1;
+$clr-white: #ffffff;
+
+$clr-primary: #183d3d;
+$clr-secondary: #93B1A6;
+$clr-gray: #263238;
+
+$ff-poppins-ss: 'Poppins', sans-serif;
+$fs-16px: 16px;
+$border-radius: 0.2em;
+
+$fz-xl-primary: 1.2em;
+$fz-primary: 1em;
+$fz-secondary: 0.8em;
+$fz-section-title: 1.5em;
+
+#hr-breaker {
+    border: 0;
+    height: 0.5em;
+    background-color: $clr-secondary;
+    margin: 1em 0;
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline $clr-primary;
+}

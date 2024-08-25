@@ -1,0 +1,121 @@
+@media screen and (max-width: 550px) {
+    .section title {
+        font-size: $fz-section-title;
+    }
+
+    // Navbar section
+    .navbar {
+        width: 100%;
+        background-color: $clr-primary;
+        margin: 0;
+
+        ul {
+            li {
+                font-size: 0.8em;
+                padding-right: 1.2em;
+
+                &:first-child {
+                    font-size: 0.675em;
+                }
+            }
+        }
+    }
+
+    // Home section
+    #wrapper-main .header {
+        @include flexCenter();
+    }
+
+    // About section 
+    #wrapper-about {
+        display: flex;
+        flex-direction: column;
+    
+        #about-desc {
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: $fz-primary;
+                text-align: center;
+            }
+        }
+    }
+
+    // Project section 
+    #wrapper-grid-projects {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        .project-title {
+            font-size: $fz-primary;
+        }
+        
+        p, ul {
+            font-size: $fz-secondary;
+        }
+    }
+
+    // Skills section
+    #wrapper-skills .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    
+        img {
+            height: 80px;
+            width: 80px;
+            place-self: center;
+        }
+    }
+
+    // Education section
+    #wrapper-grid-education {
+        #school-details {
+            h3 {
+                font-size: $fz-primary;
+            }
+
+            p {
+                font-size: $fz-secondary;
+            }
+        }
+    }
+
+    // Experience Section
+    #wrapper-grid-experience {
+        .company {
+            font-size: $fz-xl-primary;
+        }
+
+        .title {
+            font-size: $fz-primary;
+        }
+
+        .employment, .job-skills, .resume-cv {
+            font-size: $fz-secondary;
+        }
+    }
+
+    // Contact Section
+    #wrapper-contact {
+        #contact-table {
+            th {
+                font-size: $fz-secondary;
+            }
+        }
+    }
+
+    // Footer Section
+    #wrapper-footer {
+        font-size: $fz-secondary;
+
+        #copyright {
+            font-size: 0.7em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+}

@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+#hr-breaker {
+  border: 0;
+  height: 0.5em;
+  background-color: #93B1A6;
+  margin: 1em 0;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  -webkit-text-decoration: underline #183d3d;
+          text-decoration: underline #183d3d;
+}
+
+* {
+  box-sizing: border-box;
+  color: #183d3d;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #263238;
+  background-color: #eceff1;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #183d3d;
+  margin: 0;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 3em;
+}
+.navbar ul li {
+  padding-right: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+.navbar ul li:first-child {
+  margin: auto;
+  color: #ffffff;
+  margin-left: 2em;
+}
+.navbar ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navbar ul a:hover {
+  border-bottom: 0.2em solid #93B1A6;
+}
+.navbar #logo-text {
+  color: #ffffff;
+}
+.navbar #logo_slash {
+  color: #93B1A6;
+}
+
+#wrapper-main {
+  margin: 2em;
+}
+#wrapper-main .header {
+  text-align: center;
+}
+
+#wrapper-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 2em;
+}
+#wrapper-about .column-1 #ajdm_picture {
+  width: 25rem;
+  height: 35rem;
+  border-radius: 21%;
+}
+#wrapper-about .column-2 h1 {
+  text-align: left;
+}
+#wrapper-about #about-desc h1 {
+  font-size: 3em;
+  margin-bottom: -0.1em;
+}
+
+#wrapper-grid-projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+#wrapper-grid-projects .container {
+  background: #ffffff;
+  border-radius: 0.2em;
+  padding: 1em;
+  border-bottom: 0.5em solid #183d3d;
+}
+#wrapper-grid-projects .container h2 {
+  text-align: center;
+}
+#wrapper-grid-projects .container .proj_thumbnail {
+  max-width: 100%;
+}
+
+#wrapper-skills {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#wrapper-skills .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.4em;
+  padding: 0;
+}
+#wrapper-skills img {
+  height: 100px;
+  width: 100px;
+  place-self: center;
+}
+
+#wrapper-grid-education .container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 8fr;
+  gap: 2em;
+}
+
+#wrapper-grid-experience .job-container {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-gap: 1em;
+}
+#wrapper-grid-experience .job-logo {
+  margin-top: 1.6em;
+}
+
+#wrapper-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrapper-contact #contact-table {
+  display: flex;
+  border: 1px solid #183d3d tr;
+}
+#wrapper-contact #contact-table th {
+  padding: 1em;
+  color: red;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 1.8em;
+  }
+  .navbar {
+    background-color: #183d3d;
+    margin: 0;
+    width: 100%;
+  }
+  .navbar li a {
+    font-size: 0.8em;
+  }
+  .wrapper-main .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #wrapper-about {
+    display: flex;
+    flex-direction: column;
+  }
+  #wrapper-about #about-desc h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  #wrapper-about p {
+    font-size: 1em;
+    text-align: center;
+  }
+  #wrapper-grid-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #wrapper-grid-projects .project-title {
+    font-size: 1em;
+  }
+  #wrapper-grid-projects p, #wrapper-grid-projects ul {
+    font-size: 0.8em;
+  }
+  #wrapper-skills .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #wrapper-skills .container img {
+    height: 80px;
+    width: 80px;
+    place-self: center;
+  }
+  #wrapper-grid-education #school-details h3 {
+    font-size: 1em;
+  }
+  #wrapper-grid-education #school-details p {
+    font-size: 0.8em;
+  }
+  #wrapper-grid-experience .company {
+    font-size: 1.2em;
+  }
+  #wrapper-grid-experience .title {
+    font-size: 1em;
+  }
+  #wrapper-grid-experience .employment, #wrapper-grid-experience .job-skills, #wrapper-grid-experience .resum-cv {
+    font-size: 0.8em;
+  }
+  #wrapper-contact #contact-table th {
+    font-size: 0.8em;
+  }
+  #wrapper-footer {
+    font-size: 0.8em;
+  }
+  #wrapper-footer #copyright {
+    font-size: 0.7em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section title {
+    font-size: 1.5em;
+  }
+  .navbar {
+    width: 100%;
+    background-color: #183d3d;
+    margin: 0;
+  }
+  .navbar ul li {
+    font-size: 0.8em;
+    padding-right: 1.2em;
+  }
+  .navbar ul li:first-child {
+    font-size: 0.675em;
+  }
+  #wrapper-main .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #wrapper-about {
+    display: flex;
+    flex-direction: column;
+  }
+  #wrapper-about #about-desc h1 {
+    font-size: 1.8em;
+  }
+  #wrapper-about #about-desc p {
+    font-size: 1em;
+    text-align: center;
+  }
+  #wrapper-grid-projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #wrapper-grid-projects .project-title {
+    font-size: 1em;
+  }
+  #wrapper-grid-projects p, #wrapper-grid-projects ul {
+    font-size: 0.8em;
+  }
+  #wrapper-skills .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #wrapper-skills .container img {
+    height: 80px;
+    width: 80px;
+    place-self: center;
+  }
+  #wrapper-grid-education #school-details h3 {
+    font-size: 1em;
+  }
+  #wrapper-grid-education #school-details p {
+    font-size: 0.8em;
+  }
+  #wrapper-grid-experience .company {
+    font-size: 1.2em;
+  }
+  #wrapper-grid-experience .title {
+    font-size: 1em;
+  }
+  #wrapper-grid-experience .employment, #wrapper-grid-experience .job-skills, #wrapper-grid-experience .resume-cv {
+    font-size: 0.8em;
+  }
+  #wrapper-contact #contact-table th {
+    font-size: 0.8em;
+  }
+  #wrapper-footer {
+    font-size: 0.8em;
+  }
+  #wrapper-footer #copyright {
+    font-size: 0.7em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 430px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar ul li {
+    font-size: 0.6em;
+    padding-right: 1.2em;
+  }
+  .navbar #logo-text {
+    font-size: 0.8em;
+  }
+  #wrapper-about .column-1 #ajdm_picture {
+    width: 18rem;
+    height: 25rem;
+    border-radius: 19%;
+  }
+  #wrapper-grid-experience .job-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #wrapper-grid-experience .company, #wrapper-grid-experience .title, #wrapper-grid-experience .employment {
+    text-align: center;
+  }
+}/*# sourceMappingURL=styles.css.map */

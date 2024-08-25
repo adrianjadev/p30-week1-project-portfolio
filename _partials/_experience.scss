@@ -1,0 +1,12 @@
+#wrapper-grid-experience {
+
+    .job-container {
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+        grid-gap: 1em;
+    }
+
+    .job-logo {
+        margin-top: 1.6em;
+    }
+}

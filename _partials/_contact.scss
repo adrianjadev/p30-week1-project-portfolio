@@ -1,0 +1,18 @@
+#wrapper-contact {
+    @include flexCenter();
+
+    #contact-table {
+        display: flex;
+        border: 1px solid $clr-primary
+    
+        tr {
+        
+        }
+
+        th {
+            padding: 1em;
+            color: red;
+            text-align: left;
+        }
+    }
+}

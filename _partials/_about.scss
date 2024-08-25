@@ -1,0 +1,29 @@
+#wrapper-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 2em;
+
+    .column-1 {
+        #ajdm_picture {
+            width: 25rem;
+            height: 35rem;
+            border-radius: 21%;
+        }
+    }
+
+    .column-2 {
+        h1 {
+            text-align: left;
+        }
+    }
+
+    #about-desc {
+        h1 {
+            font-size: 3em;
+            margin-bottom: -0.1em;
+        }
+    }
+}
+
+

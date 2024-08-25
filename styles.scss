@@ -1,0 +1,34 @@
+@import "./_partials/font";
+@import "./_partials/variables";
+@import "./_partials/mixins";
+
+* {
+    box-sizing: border-box;
+    color: $clr-primary;
+}
+
+body {
+    margin: 0;
+    font-family: $ff-poppins-ss;
+    font-size: $fs-16px;
+    color: $clr-gray;
+    background-color: $clr-background;
+}
+
+// sections
+@import "./_partials/nav";
+@import "./_partials/home";
+@import "./_partials/about";
+@import "./_partials/projects";
+@import "./_partials/skills";
+@import "./_partials/education";
+@import "./_partials/experience";
+@import "./_partials/contact";
+
+// Media queries
+@import "./_partials/mq_768px";
+@import "./_partials/mq_550px";
+@import "./_partials/mq_430px";
+
+
+

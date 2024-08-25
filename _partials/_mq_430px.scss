@@ -1,0 +1,45 @@
+@media screen and (max-width: 430px) {
+
+    // Nav Section
+    .navbar {
+        width: 100%;
+
+        ul {
+            li {
+                font-size: 0.6em;
+                padding-right: 1.2em;
+            }
+        }
+
+        #logo-text {
+            font-size: 0.8em;
+        }
+    }
+
+    // About Section
+
+    #wrapper-about {
+
+        .column-1 {
+            #ajdm_picture {
+                width: 18rem;
+                height: 25rem;
+                border-radius: 19%;
+            }
+        }
+    }
+
+    // Experience Section
+    #wrapper-grid-experience {
+        
+        .job-container {
+            @include flexCenter();
+            flex-direction: column;
+            
+        }
+        .company, .title, .employment {
+            text-align: center;
+        }
+    }
+
+}

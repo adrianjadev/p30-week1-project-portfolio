@@ -1,0 +1,6 @@
+#wrapper-grid-education .container {
+
+    @include gridCenter();
+    grid-template-columns: 1fr 8fr;
+    gap: 2em;
+}

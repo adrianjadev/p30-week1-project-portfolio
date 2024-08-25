@@ -1,0 +1,21 @@
+#wrapper-grid-projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+
+    .container {
+        background: $clr-white;
+        border-radius: $border-radius;
+        padding: 1em;
+        border-bottom: 0.5em solid $clr-primary;
+
+        h2 {
+            text-align: center;
+        }
+
+        .proj_thumbnail {
+            max-width: 100%;
+        }
+    }
+}
+
